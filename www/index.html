@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>
+<title>Jeopardy</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="closeClick" class="closeButton">
+    <div id="closeButtonContainer">
+      <div class="innerCloseButtonContainer">X</div>
+    </div>
+</div>
+
+<div class="warningBox">
+    <p id="warningShot">Are you sure you want to quit?</p>
+  <div id="yesClick" class="yesButton">
+    <div id="yesButtonContainer">
+      <div class="innerYesButtonContainer">Yes</div>
+    </div>
+  </div>
+  <div id="noClick" class="noButton">
+    <div id="noButtonContainer">
+      <div class="innerNoButtonContainer">No</div>
+    </div>
+  </div>    
+</div> 
+<div class="warningBoxTwo">
+    <p id="warningShotTwo">Are you sure you want to clear high scores?</p>
+  <div id="yesClickTwo" class="yesButtonTwo">
+    <div id="yesButtonContainerTwo">
+      <div class="innerYesButtonContainerTwo">Yes</div>
+    </div>
+  </div>
+  <div id="noClickTwo" class="noButtonTwo">
+    <div id="noButtonContainerTwo">
+      <div class="innerNoButtonContainerTwo">No</div>
+    </div>
+  </div>    
+</div>    
+<div id="outerWelcomePage" class="welcomeLaunch">
+  <div id="welcomePageBody">
+    <div id="welcomePageContainer">
+      <div id="innerWelcomePageContainer">100% Generic<br>Trivia Game
+          <h4 id="loadingMsg"></h4>
+          <div class="loaderBox">
+              <div class="loader"></div>
+          </div>  
+          <h6 id="jservice">Questions and answers provided by jservice.<br>jservice.io</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div id="launchClick" class="welcomeLaunch">
+    <div id="launchButtonContainer" class="launchButton"> -->
+    <!-- </div>
+  </div> -->
+<div class="doublePageBody">
+  <div class="doublePageContainer">
+    <div class="innerDoublePageContainer">Dare<br>2<br>Double?</div>
+  </div>
+</div>
+
+<div class="eBoardPage">
+<div class="block1"></div>
+<div class="block2"></div>
+<div class="block3"></div>
+<div class="block4"></div>
+<div class="block5"></div>
+<div class="block6"></div>
+<div class="block7"></div>
+<div class="block8"></div>
+<div class="block9"></div>
+<div class="block10"></div>
+<div class="block11"></div>
+<div class="block12"></div>
+<div class="block13"></div>
+<div class="block14"></div>
+<div class="block15"></div>
+<div class="block16"></div>
+<div class="block17"></div>
+<div class="block18"></div>
+<div class="block19"></div>
+<div class="block20"></div>
+<div class="block21"></div>
+<div class="block22"></div>
+<div class="block23"></div>
+<div class="block24"></div>
+<div class="block25"></div>
+<div class="block26"></div>
+<div class="block27"></div>
+<div class="block28"></div>
+<div class="block29"></div>
+<div class="block30"></div>
+
+<div id="score" class="panel"></div>
+<div id="percentage" class="panel"><p id="totalQ"></p><br><p id="correctQ"></p><br><p id="wrongQ"></p><br><p id="skippedQ"></p></div>
+
+<table class="eBoard">
+  <tr class="titles">
+    <td id="category1" class="categories"></td><td id="category2" class="categories"></td><td id="category3" class="categories"></td><td id="category4" class="categories"></td><td id="category5" class="categories"></td><td id="category6" class="categories"></td>
+  </tr>
+  <tr>
+    <td id="question1" class="questions">$100</td><td id="question6" class="questions">$100</td><td id="question11" class="questions">$100</td><td id="question16" class="questions">$100</td><td id="question21" class="questions">$100</td><td id="question26" class="questions">$100</td>
+  </tr>
+  <tr>
+    <td id="question2" class="questions">$200</td><td id="question7" class="questions">$200</td><td id="question12" class="questions">$200</td><td id="question17" class="questions">$200</td><td id="question22" class="questions">$200</td><td id="question27" class="questions">$200</td>
+  </tr>
+  <tr>
+    <td id="question3" class="questions">$300</td><td id="question8" class="questions">$300</td><td id="question13" class="questions">$300</td><td id="question18" class="questions">$300</td><td id="question23" class="questions">$300</td><td id="question28" class="questions">$300</td>
+  </tr>
+  <tr>
+    <td id="question4" class="questions">$400</td><td id="question9" class="questions">$400</td><td id="question14" class="questions">$400</td><td id="question19" class="questions">$400</td><td id="question24" class="questions">$400</td><td id="question29" class="questions">$400</td>
+  </tr>
+  <tr>
+    <td id="question5" class="questions">$500</td><td id="question10" class="questions">$500</td><td id="question15" class="questions">$500</td><td id="question20" class="questions">$500</td><td id="question25" class="questions">$500</td><td id="question30" class="questions">$500</td>
+  </tr>
+</table>
+</div>
+<div class="clickBlock"></div>
+
+<div class="questionPage">
+  <div class="categoryButton">
+    <div class="categoryButtonContainer">
+      <div class="innerCategoryButtonContainer">
+        <div id="category">The Category Is</div>
+      </div>
+    </div>
+  </div>
+  <div class="outerQuestionPage">
+    <div class="innerQuestionPage">
+      <div class="questionContainer">
+        <div id="showQuestion"></div>
+        <div id="showDate"></div>  
+      </div>
+    </div>
+  </div>
+  <div class="timerButton">
+    <div class="timerButtonContainer">
+      <div class="innerTimerButtonContainer">
+        <div id="timer">10</div>
+      </div>
+    </div>
+  </div>
+  <div id="passButton" class="passButtonClass">
+    <div class="passButtonContainer">
+      <div class="innerPassButtonContainer">
+        <div>Pass</div>
+      </div>
+    </div>
+  </div>
+  <div id="answerButton" class="answerButtonClass">
+    <div class="answerButtonContainer">
+      <div class="innerAnswerButtonContainer">
+        <div>Answer</div>
+      </div>
+    </div>
+  </div>
+  <div id="answerContainer" class="answerInputs"></div>
+  <input id="answerText" type="text" size="40" class="answerInputs"/>
+  <div id="answerSubmit" class="answerInputs">
+    <div id="answerSubmitContainer" class="answerInputs">
+      <div id="innerAnswerSubmit" class="answerInputs">
+        <div>Submit</div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="highScorePage">
+  <!-- <div class="highScoreTitleButton">
+    <div class="highScoreContainer">
+      <div class="innerHighScoreContainer">
+        <div id="highScoreTitle">High Scores</div>
+        </div>
+      </div>
+    </div> -->
+  <div class="outerHighScorePage">
+    <div class="innerHighScorePage">
+      <div class="highScoreContainer">
+                <h6 id="highScoreTitle">High Scores</h6>
+          <table id="highScores">
+              <tr class="shrinktr">
+      <td id="tableDate" class="tableDates">Date</td><td id="tableScore" class="tableScores">Total Score</td><td id="tableRight" class="tableRights">Correct</td><td id="tableWrong" class="tableWrongs">Wrong</td><td id="tableSkipped" class="tabledSkippeds">Skipped</td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate1" class="dates"></td><td id="tableScore1" class="tableScores"></td><td id="tableRight1" class="tableRights"></td><td id="tableWrong1" class="tableWrongs"></td><td id="tableSkipped1" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate2" class="dates"></td><td id="tableScore2" class="tableScores"></td><td id="tableRight2" class="tableRights"></td><td id="tableWrong2" class="tableWrongs"></td><td id="tableSkipped2" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate3" class="dates"></td><td id="tableScore3" class="tableScores"></td><td id="tableRight3" class="tableRights"></td><td id="tableWrong3" class="tableWrongs"></td><td id="tableSkipped3" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate4" class="dates"></td><td id="tableScore4" class="tableScores"></td><td id="tableRight4" class="tableRights"></td><td id="tableWrong4" class="tableWrongs"></td><td id="tableSkipped4" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate5" class="dates"></td><td id="tableScore5" class="tableScores"></td><td id="tableRight5" class="tableRights"></td><td id="tableWrong5" class="tableWrongs"></td><td id="tableSkipped5" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate6" class="dates"></td><td id="tableScore6" class="tableScores"></td><td id="tableRight6" class="tableRights"></td><td id="tableWrong6" class="tableWrongs"></td><td id="tableSkipped6" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate7" class="dates"></td><td id="tableScore7" class="tableScores"></td><td id="tableRight7" class="tableRights"></td><td id="tableWrong7" class="tableWrongs"></td><td id="tableSkipped7" class="tabledSkippeds">
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate8" class="dates"></td><td id="tableScore8" class="tableScores"></td><td id="tableRight8" class="tableRights"></td><td id="tableWrong8" class="tableWrongs"></td><td id="tableSkipped8" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate9" class="dates"></td><td id="tableScore9" class="tableScores"></td><td id="tableRight9" class="tableRights"></td><td id="tableWrong9" class="tableWrongs"></td><td id="tableSkipped9" class="tabledSkippeds"></td>
+    </tr>
+    <tr class="shrinktr">
+      <td id="tableDate10" class="dates"></td><td id="tableScore10" class="tableScores"></td><td id="tableRight10" class="tableRights"></td><td id="tableWrong10" class="tableWrongs"></td><td id="tableSkipped10" class="tabledSkippeds"></td>
+    </tr>
+          </table>
+      </div>
+    </div>
+  </div>
+  <div id="clearButton" class="clearButtonClass">
+    <div class="clearButtonContainer">
+      <div class="innerClearButtonContainer">
+        <div>Clear High Scores</div>
+      </div>
+    </div>
+  </div>
+  <div id="restartButton" class="restartButtonClass">
+    <div class="restartButtonContainer">
+      <div class="innerRestartButtonContainer">
+        <div>Play Again</div>
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- 
+<div class="highScorePage">
+  <table id="highScores">
+    <tr>
+      <td id="tableDate" class="tableDates">Date</td><td id="tableScore" class="tableScores">Total Score</td><td id="tableRight" class="tableRights">Correct</td><td id="tableWrong" class="tableWrongs">Wrong</td><td id="tableSkipped" class="tabledSkippeds">Skipped</td>
+    </tr>
+    <tr>
+      <td id="tableDate1" class="dates"></td><td id="tableScore1" class="tableScores"></td><td id="tableRight1" class="tableRights"></td><td id="tableWrong1" class="tableWrongs"></td><td id="tableSkipped1" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate2" class="dates"></td><td id="tableScore2" class="tableScores"></td><td id="tableRight2" class="tableRights"></td><td id="tableWrong2" class="tableWrongs"></td><td id="tableSkipped2" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate3" class="dates"></td><td id="tableScore3" class="tableScores"></td><td id="tableRight3" class="tableRights"></td><td id="tableWrong3" class="tableWrongs"></td><td id="tableSkipped3" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate4" class="dates"></td><td id="tableScore4" class="tableScores"></td><td id="tableRight4" class="tableRights"></td><td id="tableWrong4" class="tableWrongs"></td><td id="tableSkipped4" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate5" class="dates"></td><td id="tableScore5" class="tableScores"></td><td id="tableRight5" class="tableRights"></td><td id="tableWrong5" class="tableWrongs"></td><td id="tableSkipped5" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate6" class="dates"></td><td id="tableScore6" class="tableScores"></td><td id="tableRight6" class="tableRights"></td><td id="tableWrong6" class="tableWrongs"></td><td id="tableSkipped6" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate7" class="dates"></td><td id="tableScore7" class="tableScores"></td><td id="tableRight7" class="tableRights"></td><td id="tableWrong7" class="tableWrongs"></td><td id="tableSkipped7" class="tabledSkippeds">
+    </tr>
+    <tr>
+      <td id="tableDate8" class="dates"></td><td id="tableScore8" class="tableScores"></td><td id="tableRight8" class="tableRights"></td><td id="tableWrong8" class="tableWrongs"></td><td id="tableSkipped8" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate9" class="dates"></td><td id="tableScore9" class="tableScores"></td><td id="tableRight9" class="tableRights"></td><td id="tableWrong9" class="tableWrongs"></td><td id="tableSkipped9" class="tabledSkippeds"></td>
+    </tr>
+    <tr>
+      <td id="tableDate10" class="dates"></td><td id="tableScore10" class="tableScores"></td><td id="tableRight10" class="tableRights"></td><td id="tableWrong10" class="tableWrongs"></td><td id="tableSkipped10" class="tabledSkippeds"></td>
+    </tr>
+  </table>
+</div> -->
+<script src="cordova.js"></script>
+<script src="jquerymine.js"></script>
+<script src="app.js"></script>
+<!-- <script type='text/javascript'>$Spelling.SpellCheckAsYouType('answerText')</script> -->
+
+</body>
